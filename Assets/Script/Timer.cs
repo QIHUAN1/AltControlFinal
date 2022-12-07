@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
     [SerializeField] float time = 200f;
     [SerializeField] float currentTime;
+
+    public int Scene;
 
     AudioSource audiosource;
     public AudioClip clockSound;
@@ -45,6 +48,16 @@ public class Timer : MonoBehaviour
         }
 
 
+        if (time <= 0)
+        {
+            time = 0;
+        }
 
+
+
+        if (time == 0)
+        {
+            SceneManager.LoadScene(Scene);
+        }
     }
 }

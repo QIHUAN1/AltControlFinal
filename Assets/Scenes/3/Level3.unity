@@ -389,6 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 120
   currentTime: 0
+  Scene: 11
   clockSound: {fileID: 8300000, guid: da5154d7d3c60dd4bad69efefa50eed8, type: 3}
 --- !u!82 &479921072
 AudioSource:
