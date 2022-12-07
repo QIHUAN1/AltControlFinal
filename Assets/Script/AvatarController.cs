@@ -5,55 +5,74 @@ using UnityEngine.SceneManagement;
 
 public class AvatarController : MonoBehaviour
 {
-
-    public float moveSpeed = 2.5f;
-
     public Rigidbody2D rb;
 
     public Animator animator;
 
     public Transform firepoint;
 
+    AudioSource audiosource;
+    public AudioClip RotateSound;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
         if (Input.GetKey(KeyCode.Q))
         {
             animator.SetTrigger("45");
+            GetComponent<AudioSource>().clip = RotateSound;
+            GetComponent<AudioSource>().Play();
         }
         if (Input.GetKey(KeyCode.W))
         {
             animator.SetTrigger("90");
+            GetComponent<AudioSource>().clip = RotateSound;
+            GetComponent<AudioSource>().Play();
         }
         if (Input.GetKey(KeyCode.E))
         {
             animator.SetTrigger("135");
+            GetComponent<AudioSource>().clip = RotateSound;
+            GetComponent<AudioSource>().Play();
         }
         if (Input.GetKey(KeyCode.R))
         {
             animator.SetTrigger("180");
+            GetComponent<AudioSource>().clip = RotateSound;
+            GetComponent<AudioSource>().Play();
         }
         if (Input.GetKey(KeyCode.T))
         {
             animator.SetTrigger("225");
+            GetComponent<AudioSource>().clip = RotateSound;
+            GetComponent<AudioSource>().Play();
         }
         if (Input.GetKey(KeyCode.Y))
         {
             animator.SetTrigger("270");
+            GetComponent<AudioSource>().clip = RotateSound;
+            GetComponent<AudioSource>().Play();
         }
         if (Input.GetKey(KeyCode.U))
         {
             animator.SetTrigger("315");
+            GetComponent<AudioSource>().clip = RotateSound;
+            GetComponent<AudioSource>().Play();
         }
         if (Input.GetKey(KeyCode.I))
         {
             animator.SetTrigger("360");
+            GetComponent<AudioSource>().clip = RotateSound;
+            GetComponent<AudioSource>().Play();
         }
     }
 
@@ -64,6 +83,7 @@ public class AvatarController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             gameObject.transform.position = new Vector3(firepoint.position.x, firepoint.position.y, 0);
+
         }
 
     }

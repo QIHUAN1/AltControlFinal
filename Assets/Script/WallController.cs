@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class WallController : MonoBehaviour
 {
+    AudioSource audiosource;
+    public AudioClip WallSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,8 @@ public class WallController : MonoBehaviour
     {
         if (other.CompareTag("Bullet"))
         {
-            Debug.Log(111);
+            GetComponent<AudioSource>().clip = WallSound;
+            GetComponent<AudioSource>().Play();
             Destroy(other.gameObject);
         }
     }

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
+
+    AudioSource audiosource;
+    public AudioClip DoorSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +24,8 @@ public class DoorController : MonoBehaviour
     {
         if (other.CompareTag("Bullet"))
         {
-            Debug.Log(22);
+            GetComponent<AudioSource>().clip = DoorSound;
+            GetComponent<AudioSource>().Play();
             Destroy(other.gameObject);
         }
     }
