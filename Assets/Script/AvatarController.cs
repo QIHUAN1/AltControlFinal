@@ -13,6 +13,7 @@ public class AvatarController : MonoBehaviour
 
     AudioSource audiosource;
     public AudioClip RotateSound;
+    public AudioClip RotateSound2;
 
 
     // Start is called before the first frame update
@@ -71,7 +72,7 @@ public class AvatarController : MonoBehaviour
         if (Input.GetKey(KeyCode.I))
         {
             animator.SetTrigger("360");
-            GetComponent<AudioSource>().clip = RotateSound;
+            GetComponent<AudioSource>().clip = RotateSound2;
             GetComponent<AudioSource>().Play();
         }
     }

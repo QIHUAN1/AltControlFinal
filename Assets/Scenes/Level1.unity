@@ -464,6 +464,7 @@ MonoBehaviour:
   animator: {fileID: 735323019}
   firepoint: {fileID: 385798791}
   RotateSound: {fileID: 8300000, guid: 0b4a4d6821ee8c94e8985e0b35b25e2b, type: 3}
+  RotateSound2: {fileID: 8300000, guid: 1579792fc6e5f184a82e6623168004bb, type: 3}
 --- !u!212 &735323017
 SpriteRenderer:
   m_ObjectHideFlags: 0
