@@ -569,7 +569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firepoint: {fileID: 1672800348}
   bulletp: {fileID: 6142624419823542824, guid: e8cda81dcf9bf6d488ffc93dac89f08c, type: 3}
-  shootsound: {fileID: 8300000, guid: 96ab5976372f03b4d88add747f94c34a, type: 3}
+  shootsound: {fileID: 8300000, guid: 315cc49d75408624189fcb5732d2328a, type: 3}
   bulletForce: 2.5
 --- !u!82 &735323021
 AudioSource:
