@@ -398,9 +398,10 @@ GameObject:
   - component: {fileID: 735323019}
   - component: {fileID: 735323020}
   - component: {fileID: 735323021}
+  - component: {fileID: 735323022}
   m_Layer: 0
   m_Name: Avatar
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -672,6 +673,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &735323022
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735323013}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.054018065, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.1422166
 --- !u!1001 &796168426
 PrefabInstance:
   m_ObjectHideFlags: 0
