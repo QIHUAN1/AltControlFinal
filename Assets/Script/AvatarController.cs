@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AvatarController : MonoBehaviour
 {
@@ -65,5 +66,14 @@ public class AvatarController : MonoBehaviour
             gameObject.transform.position = new Vector3(firepoint.position.x, firepoint.position.y, 0);
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Door"))
+        {
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }

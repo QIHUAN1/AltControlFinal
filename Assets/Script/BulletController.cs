@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WallController : MonoBehaviour
+public class BulletController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,12 +16,9 @@ public class WallController : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.CompareTag("Bullet"))
-        {
-            Debug.Log(111);
-            Destroy(other.gameObject);
-        }
+        Debug.Log(11);
+
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WallController : MonoBehaviour
+public class DoorController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class WallController : MonoBehaviour
     {
         if (other.CompareTag("Bullet"))
         {
-            Debug.Log(111);
+            Debug.Log(22);
             Destroy(other.gameObject);
         }
     }
