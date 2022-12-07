@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] float time = 120f;
+    [SerializeField] float time = 200f;
     [SerializeField] float currentTime;
 
     AudioSource audiosource;
@@ -26,13 +26,13 @@ public class Timer : MonoBehaviour
         currentTime = time;
         time -= 1 * Time.deltaTime;
 
-        if (currentTime <= 70 && currentTime >= 30)
+        if (currentTime <= 120 && currentTime >= 60)
         {
 
             audiosource.volume = 0.3f;
         }
 
-        if (currentTime <= 30 && currentTime >= 10)
+        if (currentTime <= 60 && currentTime >= 10)
         {
 
             audiosource.volume = 0.5f;
