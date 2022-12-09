@@ -17,16 +17,9 @@ public class Retry : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetMouseButtonDown(0))
         {
             SceneManager.LoadScene(Scene);
-        }
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-
-            SceneManager.LoadScene(0);
-
         }
     }
 }

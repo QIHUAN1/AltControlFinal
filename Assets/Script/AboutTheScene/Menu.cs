@@ -14,10 +14,6 @@ public class Menu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            SceneManager.LoadScene(2);
-        }
 
         if (Input.GetKey(KeyCode.Space))
         {

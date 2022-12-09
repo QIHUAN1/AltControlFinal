@@ -27,49 +27,49 @@ public class AvatarController : MonoBehaviour
     {
 
 
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.W))
         {
             animator.SetTrigger("45");
             GetComponent<AudioSource>().clip = RotateSound;
             GetComponent<AudioSource>().Play();
         }
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.A))
         {
             animator.SetTrigger("90");
             GetComponent<AudioSource>().clip = RotateSound;
             GetComponent<AudioSource>().Play();
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.S))
         {
             animator.SetTrigger("135");
             GetComponent<AudioSource>().clip = RotateSound;
             GetComponent<AudioSource>().Play();
         }
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.D))
         {
             animator.SetTrigger("180");
             GetComponent<AudioSource>().clip = RotateSound;
             GetComponent<AudioSource>().Play();
         }
-        if (Input.GetKey(KeyCode.T))
+        if (Input.GetKey(KeyCode.F))
         {
             animator.SetTrigger("225");
             GetComponent<AudioSource>().clip = RotateSound;
             GetComponent<AudioSource>().Play();
         }
-        if (Input.GetKey(KeyCode.Y))
+        if (Input.GetKey(KeyCode.G))
         {
             animator.SetTrigger("270");
             GetComponent<AudioSource>().clip = RotateSound;
             GetComponent<AudioSource>().Play();
         }
-        if (Input.GetKey(KeyCode.U))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             animator.SetTrigger("315");
             GetComponent<AudioSource>().clip = RotateSound;
             GetComponent<AudioSource>().Play();
         }
-        if (Input.GetKey(KeyCode.I))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             animator.SetTrigger("360");
             GetComponent<AudioSource>().clip = RotateSound2;

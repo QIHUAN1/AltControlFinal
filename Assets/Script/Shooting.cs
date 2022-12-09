@@ -23,7 +23,7 @@ public class Shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetMouseButtonDown(0))
         {
             
             GameObject bullet = Instantiate(bulletp, firepoint.position, firepoint.rotation);

@@ -466,7 +466,7 @@ MonoBehaviour:
     earphone and the blindfold.
 
 
-    Press the Detect button to Start.'
+    Press the left button  to Start.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c3240e688b95bb24b9f7c2bcecc5e6c3, type: 2}
   m_sharedMaterial: {fileID: -2607337171161784444, guid: c3240e688b95bb24b9f7c2bcecc5e6c3, type: 2}

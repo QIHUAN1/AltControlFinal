@@ -1109,10 +1109,11 @@ MonoBehaviour:
   m_text: 'Please rotate your chair until it face the front.
 
 
-    Press the Detect
+    Press the left
     button to retry.
 
-    Press the Walk button to quit.'
+
+    If you wanna quit, please took off your blindfold.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c3240e688b95bb24b9f7c2bcecc5e6c3, type: 2}
   m_sharedMaterial: {fileID: -2607337171161784444, guid: c3240e688b95bb24b9f7c2bcecc5e6c3, type: 2}

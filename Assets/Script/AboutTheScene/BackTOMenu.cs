@@ -14,7 +14,7 @@ public class BackTOMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetMouseButtonDown(0))
         {
             SceneManager.LoadScene(0);
         }
