@@ -1074,7 +1074,7 @@ RectTransform:
   m_GameObject: {fileID: 2137684189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4025044, y: 1.4025044, z: 1.4025044}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 370034627}
@@ -1105,14 +1105,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Good job, you pass the first level
+  m_text: 'Congrat! You did it!
 
 
-    Please rotate your chair until
-    it face the front.
+    Please make sure the chair is at the right
+    angle.
 
 
-    Press the Detect button to continue.'
+    Press the button on the left to continue.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c3240e688b95bb24b9f7c2bcecc5e6c3, type: 2}
   m_sharedMaterial: {fileID: -2607337171161784444, guid: c3240e688b95bb24b9f7c2bcecc5e6c3, type: 2}
@@ -1121,8 +1121,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4291940817
+  m_fontColor: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

@@ -322,7 +322,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Touch the button on the right  to start
+  m_text: Touch the button on the right to start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c3240e688b95bb24b9f7c2bcecc5e6c3, type: 2}
   m_sharedMaterial: {fileID: -2607337171161784444, guid: c3240e688b95bb24b9f7c2bcecc5e6c3, type: 2}
@@ -331,8 +331,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913855
-  m_fontColor: {r: 0.24528301, g: 0.042808827, b: 0.042808827, a: 1}
+    rgba: 4289769648
+  m_fontColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -764,8 +764,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913855
-  m_fontColor: {r: 0.24528301, g: 0.042808827, b: 0.042808827, a: 1}
+    rgba: 4278782314
+  m_fontColor: {r: 0.41509432, g: 0.03720184, b: 0.03720184, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
