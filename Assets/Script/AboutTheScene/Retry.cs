@@ -10,6 +10,8 @@ public class Retry : MonoBehaviour
     AudioSource audiosource;
     public AudioClip ready;
 
+    public float readytime;
+
     public bool heather;
 
     // Start is called before the first frame update
@@ -22,9 +24,17 @@ public class Retry : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        readytime += 1 * Time.deltaTime;
 
-        if (Input.GetMouseButtonDown(0) && heather == true)
+        if (readytime >= 14)
         {
+            readytime = 14;
+        }
+
+        if(readytime == 14)
+        {
+            if (Input.GetMouseButtonDown(0) && heather == true)
+            {
 
                 GetComponent<AudioSource>().clip = ready;
                 GetComponent<AudioSource>().Play();
@@ -32,7 +42,10 @@ public class Retry : MonoBehaviour
                 Invoke("NextScene", 10f);
                 heather = false;
 
+            }
         }
+
+     
     }
 
     void NextScene()
