@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
-public class Retry : MonoBehaviour
+public class AfterTT : MonoBehaviour
 {
-    public int Scene;
 
     AudioSource audiosource;
     public AudioClip ready;
@@ -14,25 +13,30 @@ public class Retry : MonoBehaviour
     void Start()
     {
         audiosource = GetComponent<AudioSource>();
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        Invoke("Nextscene1", 132 * Time.deltaTime);
+    }
+
+    void Nextscene1()
+    {
 
         if (Input.GetMouseButtonDown(0))
         {
+            GetComponent<AudioSource>().clip = ready;
+            GetComponent<AudioSource>().Play();
 
-                GetComponent<AudioSource>().clip = ready;
-                GetComponent<AudioSource>().Play();
-
-                Invoke("NextScene", 10f);
-            
+            Invoke("NextScene", 10f);
         }
     }
 
     void NextScene()
     {
-        SceneManager.LoadScene(Scene);
+        SceneManager.LoadScene(3);
     }
 }

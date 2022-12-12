@@ -8,14 +8,14 @@ public class WallController : MonoBehaviour
     public AudioClip WallSound;
     public AudioClip PlayerSound;
 
-    public GameObject audio;
+    public GameObject audioSound;
 
 
     // Start is called before the first frame update
     void Start()
     {
         audiosource = GetComponent<AudioSource>();
-        audio = GameObject.FindGameObjectWithTag("Audio");
+        audioSound = GameObject.FindGameObjectWithTag("Audio");
 
         
     }
@@ -37,8 +37,8 @@ public class WallController : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            audio.GetComponent<AudioSource>().clip = PlayerSound;
-            audio.GetComponent<AudioSource>().Play();
+            GetComponent<AudioSource>().GetComponent<AudioSource>().clip = PlayerSound;
+            GetComponent<AudioSource>().GetComponent<AudioSource>().Play();
         }
     }
 
@@ -47,7 +47,7 @@ public class WallController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
 
-            audio.GetComponent<AudioSource>().Pause();
+            GetComponent<AudioSource>().GetComponent<AudioSource>().Pause();
         }
     }
 }
