@@ -322,7 +322,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Touch the button on the right to start
+  m_text: Touch the button on your right hand to start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c3240e688b95bb24b9f7c2bcecc5e6c3, type: 2}
   m_sharedMaterial: {fileID: -2607337171161784444, guid: c3240e688b95bb24b9f7c2bcecc5e6c3, type: 2}
