@@ -613,6 +613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene: 5
+  ready: {fileID: 8300000, guid: 1fedbbfe804dbeb4d84c2a81cbc2f604, type: 3}
 --- !u!82 &1216899686
 AudioSource:
   m_ObjectHideFlags: 0

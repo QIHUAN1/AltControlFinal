@@ -7,10 +7,13 @@ public class Retry : MonoBehaviour
 {
     public int Scene;
 
+    AudioSource audiosource;
+    public AudioClip ready;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -19,7 +22,19 @@ public class Retry : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene(Scene);
+            if (Input.GetMouseButtonDown(0))
+            {
+
+                GetComponent<AudioSource>().clip = ready;
+                GetComponent<AudioSource>().Play();
+
+                Invoke("NextScene", 10f);
+            }
         }
+    }
+
+    void NextScene()
+    {
+        SceneManager.LoadScene(Scene);
     }
 }

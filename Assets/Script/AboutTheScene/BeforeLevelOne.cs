@@ -5,10 +5,14 @@ using UnityEngine;
 
 public class BeforeLevelOne : MonoBehaviour
 {
+    AudioSource audiosource;
+    public AudioClip ready;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -16,7 +20,16 @@ public class BeforeLevelOne : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+           
+            GetComponent<AudioSource>().clip = ready;
+            GetComponent<AudioSource>().Play();
+
+            Invoke("NextScene", 10f);
         }
+    }
+
+    void NextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
