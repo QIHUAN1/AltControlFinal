@@ -409,6 +409,14 @@ MonoBehaviour:
   firepoint: {fileID: 1329292697}
   RotateSound: {fileID: 8300000, guid: 0b4a4d6821ee8c94e8985e0b35b25e2b, type: 3}
   RotateSound2: {fileID: 8300000, guid: 1579792fc6e5f184a82e6623168004bb, type: 3}
+  a45: 0
+  a90: 0
+  a135: 0
+  a180: 0
+  a225: 0
+  a270: 0
+  a315: 0
+  a360: 0
 --- !u!212 &167654930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -479,6 +487,50 @@ Transform:
   - {fileID: 1430575872}
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &733429131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733429133}
+  - component: {fileID: 733429132}
+  m_Layer: 0
+  m_Name: 111
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &733429132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733429131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f109a43fdb5529641a1860875ff0cc51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &733429133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733429131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.350467, y: 2.0139842, z: -0.44745123}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &803961620
 GameObject:
@@ -742,6 +794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scene: 5
   ready: {fileID: 8300000, guid: 1fedbbfe804dbeb4d84c2a81cbc2f604, type: 3}
+  readytime: 0
   heather: 0
 --- !u!82 &1216899686
 AudioSource:
