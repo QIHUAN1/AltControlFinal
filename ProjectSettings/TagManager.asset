@@ -9,6 +9,7 @@ TagManager:
   - Door
   - TouchWall
   - Audio
+  - checkpoint
   layers:
   - Default
   - TransparentFX
